@@ -158,24 +158,24 @@ section{
 
 #profile {
     display: flex;
-    justify-content: space-between; /* Aligns text and image with space between */
-    align-items: center; /* Vertically aligns text and image */
+    justify-content: space-between; 
+    align-items: center; 
     gap: 5rem;
-    height: auto; /* Adjusts height based on content */
+    height: auto; 
 }
 
 .section__pic-container {
-    height: 200px; /* Reduced height for the profile image */
-    width: 200px;  /* Reduced width for the profile image */
-    margin: auto 0; /* Centers the image vertically */
-    border-radius: 50%; /* Creates a circular profile image */
-    overflow: hidden; /* Hides any overflow of the image */
+    height: 200px; 
+    width: 200px;  
+    margin: auto 0; 
+    border-radius: 50%; 
+    overflow: hidden; 
 }
 
 .section__text {
-    flex: 1; /* Allows text to take up available space */
-    text-align: left; /* Aligns text to the left */
-    padding-right: 2rem; /* Adds spacing between text and image */
+    flex: 1; 
+    text-align: left; 
+    padding-right: 2rem; 
 }
 
 .section__text p {
@@ -189,20 +189,20 @@ section{
 
 .title {
     font-size: 3rem;
-    text-align: left; /* Aligns title to the left */
+    text-align: left;
 }
 
 /* ICONS */
 
 #socials-container {
     display: flex;
-    justify-content: flex-start; /* Aligns icons to the left */
+    justify-content: flex-start; 
     margin-top: 1rem;
-    gap: 1rem; /* Maintains spacing between icons */
+    gap: 1rem;
 }
 
 .icon {
-    height: 2rem; /* Keeps icon height consistent */
-    width: auto; /* Maintains proportional width */
-    cursor: pointer; /* Ensures the pointer cursor appears on hover */
+    height: 2rem; 
+    width: auto; 
+    cursor: pointer; 
 }
