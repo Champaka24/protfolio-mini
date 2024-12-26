@@ -141,3 +141,68 @@ a:hover{
 }
 
 /* SECTIONS */
+
+section{
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container{
+    display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+    display: flex;
+    justify-content: space-between; /* Aligns text and image with space between */
+    align-items: center; /* Vertically aligns text and image */
+    gap: 5rem;
+    height: auto; /* Adjusts height based on content */
+}
+
+.section__pic-container {
+    height: 200px; /* Reduced height for the profile image */
+    width: 200px;  /* Reduced width for the profile image */
+    margin: auto 0; /* Centers the image vertically */
+    border-radius: 50%; /* Creates a circular profile image */
+    overflow: hidden; /* Hides any overflow of the image */
+}
+
+.section__text {
+    flex: 1; /* Allows text to take up available space */
+    text-align: left; /* Aligns text to the left */
+    padding-right: 2rem; /* Adds spacing between text and image */
+}
+
+.section__text p {
+    font-weight: 600;
+}
+
+.section__text__p1 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: left; /* Aligns title to the left */
+}
+
+/* ICONS */
+
+#socials-container {
+    display: flex;
+    justify-content: flex-start; /* Aligns icons to the left */
+    margin-top: 1rem;
+    gap: 1rem; /* Maintains spacing between icons */
+}
+
+.icon {
+    height: 2rem; /* Keeps icon height consistent */
+    width: auto; /* Maintains proportional width */
+    cursor: pointer; /* Ensures the pointer cursor appears on hover */
+}
