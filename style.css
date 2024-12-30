@@ -263,3 +263,60 @@ section{
 .btn-container{
     gap: 1rem;
 }
+
+/* /* ABOUT SECTION */
+#about {
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto; /* Removed top margin to eliminate space */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* EDUCATION SECTION */
+#education {
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto; /* Removed top margin to eliminate space */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#education h2 {
+    text-align: center;
+    font-size: 2rem; /* Large, bold heading */
+    font-weight: bold;
+    margin-bottom: 1rem; /* Adds spacing below the heading */
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.education-item {
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.education-item h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    color: #007bff;
+}
+
+.education-item p {
+    margin: 0.2rem 0;
+    color: #555;
+}
+
+/* Reset heading margins globally to prevent default gaps */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
