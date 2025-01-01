@@ -4,40 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-
+    <link rel="stylesheet" href="./style.css"> <!-- Link to the main stylesheet -->
 </head>
 <body>
+   <!-- Desktop Navigation -->
    <nav id="desktop-nav">
-    <div class="logo">Champaka K R</div>
-    <div>
+        <div class="logo">Champaka K R</div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#project">Project</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-    </div>
    </nav>
-   <nav id="hamburger-nav">
-    <div class="logo">Champaka K R</div>
-    <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#education" onclick="toggleMenu()">Education</a></li>
-            <li><a href="#project" onclick="toggleMenu()">Project</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-    </div>
-   </nav>
+
+   <!-- Profile Section -->
    <section id="profile">
-        <div class="section__pic container">
+        <div class="section__pic-container">
             <img src="./assets/Profile picture1.jpg" alt="Profile Picture">
         </div>
         <div class="section__text">
@@ -45,75 +28,74 @@
             <h1 class="title">Champaka K R</h1>
             <p class="section__text__p2">Software Developer</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Champaka KR_Resume.pdf')"> Download CV </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'"> Contact Info</button>
+                <button class="btn" onclick="window.open('./assets/Champaka_KR_Resume.pdf')">Download CV</button>
+                <button class="btn" onclick="location.href='#contact'">Contact Info</button>
             </div>
             <div id="socials-container">
-                <img src="./assets/LinkedIn-logo.jpg"  alt="LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/champaka-k-r/'">
-                <img src="./assets/Github-icon2.jpeg" alt="Github" class="icon" onclick="location.href='https://github.com/Champaka24'">
+                <img src="./assets/LinkedIn-logo.jpg" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/champaka-k-r/'">
+                <img src="./assets/Github-icon2.jpeg" alt="GitHub" class="icon" onclick="location.href='https://github.com/Champaka24'">
             </div>
         </div>
     </section>
+
+    <!-- About Section -->
     <section id="about">
-      <h1 class="title">About Me</h1>
-      <div class="about-details-container">
-          <div class="text-container">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, adipisci!</p>
-          </div>
-          <div class="skills-details-container">
-              <article>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-              </article>
-              <article>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-              </article>
-              <article>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-              </article>
-              <article>
-                  <h3>Java</h3>
-                  <p>Proficient</p>
-              </article>
-              <article>
-                  <h3>SQL</h3>
-                  <p>Intermediate</p>
-              </article>
-          </div>
-      </div>
-  </section>
-<!-- Education Section -->
-  <section id="education">
-      <h1 class="title">Education</h1>
-      <div class="education-container">
-          <ul class="education-list">
-              <li>
-                  <h4>10th Grade</h4>
-                  <p>GOVT High School Heddur</p>
-                  <p>Year: 2016</p>
-                  <p>Percentage: 92.96%</p>
-              </li>
-              <li>
-                  <h4>12th Grade</h4>
-                  <p>SVET PU IND COLLEGE</p>
-                  <p>Year: 2018</p>
-                  <p>Percentage: 71.14%</p>
-              </li>
-              <li>
-                  <h4>BSc (Computer Science)</h4>
-                  <p>SRNMNC College of Applied Sciences, Shivamoga</p>
-                  <p>Year: 2021</p>
-                  <p>Percentage: 71.41%</p>
-              </li>
-              <li>
-                  <h4>Master's Degree</h4>
-                  <p>Acharya Institute of Technology</p>
-                  <p>Year: Pursuing</p>
-              </li>
-          </ul>
-      </div>
-  </section>
+        <h1 class="title">About Me</h1>
+        <div class="about-details-container">
+            <p>Pursuing an MCA with expertise in Java, SQL, J2EE concepts, and frontend development. Proficient in data structures and algorithms, with a keen interest in building innovative and efficient software applications. Experienced in developing responsive and user-friendly web interfaces. Adept at problem-solving and optimizing code for better performance. Passionate about learning new technologies and contributing to impactful projects.</p>
+            <div class="skills-details-container">
+                <article>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                </article>
+                <article>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                </article>
+                <article>
+                    <h3>JavaScript</h3>
+                    <p>Basic</p>
+                </article>
+                <article>
+                    <h3>Java</h3>
+                    <p>Proficient</p>
+                </article>
+                <article>
+                    <h3>SQL</h3>
+                    <p>Intermediate</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h1 class="title">Education</h1>
+        <ul class="education-list">
+            <li>
+                <h4>10th Grade</h4>
+                <p>GOVT High School Heddur</p>
+                <p>Year: 2016</p>
+                <p>Percentage: 92.96%</p>
+            </li>
+            <li>
+                <h4>12th Grade</h4>
+                <p>SVET PU IND COLLEGE</p>
+                <p>Year: 2018</p>
+                <p>Percentage: 71.14%</p>
+            </li>
+            <li>
+                <h4>BSc (Computer Science)</h4>
+                <p>SRNMNC College, Shivamoga</p>
+                <p>Year: 2021</p>
+                <p>Percentage: 71.41%</p>
+            </li>
+            <li>
+                <h4>Master's Degree</h4>
+                <p>Acharya Institute of Technology</p>
+                <p>Year: Pursuing</p>
+            </li>
+        </ul>
+    </section>
 </body>
 </html>
