@@ -260,11 +260,10 @@ section {
 /* ABOUT SECTION */
 #about {
     position: relative;
-    padding: 2rem;
+    padding: 0;
     text-align: center;
-    margin-bottom: 1.5rem; /* Reduced margin to decrease the space between sections */
+    margin-bottom: 0.5rem; /* Reduced margin to decrease the space between sections */
 }
-
 
 .title {
     margin-bottom: 2rem; /* Increased gap between the heading and text */
@@ -277,16 +276,33 @@ section {
     color: #333;
 }
 
-
-/* Paragraph with increased margin */
+/* Paragraph with increased size and darker color */
 .about-text {
     text-align: center;
     margin: 0 auto;
     line-height: 1.8;
-    color: #333;
-    margin-bottom: 3rem; /* Increased margin for gap */
+    font-size: 1.2rem; /* Increased font size */
+    color: #333333; /* Darker text color */
+    margin-bottom: 2rem; /* Reduced margin for gap */
 }
 
+.about-details-container p {
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #333;
+}
+
+.skills-details-container {
+    margin-top: 3rem; /* Increased margin-top for larger gap */
+}
+
+.skills-details-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
 /* Technical Skills Title */
 .skills-title {
     font-size: 1.8rem;
@@ -320,12 +336,6 @@ section {
     transition: all 0.3s ease;
 }
 
-/* Hover effect for buttons */
-.skill-box:hover {
-    background: #45a049; /* Darker green on hover */
-    transform: scale(1.05); /* Slight grow effect */
-}
-
 /* Skill Box Text */
 .skill-box h4 {
     font-size: 1.2rem;
@@ -339,32 +349,59 @@ section {
 }
 
 
-//* EDUCATION SECTION */
+/* EDUCATION SECTION */
 .education-container {
-    margin: 2rem auto;
-    max-width: 800px;
-    text-align: left; /* Align all content to the left */
+    margin: 3rem auto; /* Increased margin for spacing */
+    max-width: 900px; /* Slightly wider container */
+    background-color: #f5f5f5; /* Light background color for contrast */
+    padding: 2rem; /* Padding around content */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .education-title {
-    font-size: 2rem;
+    font-size: 2.5rem; /* Larger font size for better prominence */
     font-weight: bold;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem; /* Increased bottom margin */
     text-align: center;
-    color: black; /* Heading font color set to black */
+    color: #333333; /* Darker text for contrast */
 }
 
 .education-list {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .education-list li {
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-    text-align: left; /* Align items to the left */
-    color: black; /* Text font color set to black */
+    background-color: white; /* White background for each list item */
+    margin-bottom: 1.5rem; /* Space between items */
+    padding: 1.5rem; /* Padding inside each list item */
+    border-radius: 8px; /* Rounded corners for each entry */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    color: #555555; /* Slightly lighter color for the text */
 }
+
+.education-list h4 {
+    font-size: 1.5rem; /* Larger font size for the degree name */
+    font-weight: bold;
+    color: #333333; /* Darker color for heading */
+    margin-bottom: 0.5rem; /* Space below the heading */
+}
+
+.education-list p {
+    font-size: 1rem; /* Smaller font size for the details */
+    margin: 0.5rem 0; /* Add space between details */
+    color: #555555; /* Dark gray color for readability */
+}
+
+.education-list .year,
+.education-list .percentage {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #888888; /* Slightly lighter gray */
+}
+
 
 .education-list h4 {
     font-size: 1.5rem;
