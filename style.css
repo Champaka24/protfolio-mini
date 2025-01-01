@@ -264,79 +264,98 @@ section{
     gap: 1rem;
 }
 
-/*  ABOUT SECTION  */
+/* ABOUT SECTION */
 #about {
     position: relative;
-}
-.about-containers{
-    gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
-
-.about-details-containers{
-   justify-content: center;
-   flex-direction: column;
-}
-.about-containers,
-.about-details-containers{
-    display: flex;
-}
-
-.details-container{
-   padding: 1.5 rem;
-   flex: 1;
-   background: white;
-   border-radius:2 rem ;
-   border: rgb(53, 53, 53) 0.1rem solid;
-   border-color: rgb(163, 163, 163);
-   text-align: c;
-}
-
-
-/* EDUCATION SECTION */
-#education {
     padding: 2rem;
-    background-color: #ffffff;
-    border-radius: 10px;
-    max-width: 800px;
-    margin: 0 auto; /* Removed top margin to eliminate space */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#education h2 {
-    text-align: center;
-    font-size: 2rem; /* Large, bold heading */
-    font-weight: bold;
-    margin-bottom: 1rem; /* Adds spacing below the heading */
-}
-
-.education-container {
+.section-container {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
-.education-item {
-    padding: 1rem;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    text-align: left;
+.about-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.education-item h3 {
+.text-container p {
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* ABOUT SECTION */
+#about {
+    position: relative;
+    padding: 2rem;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-container p {
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* EDUCATION SECTION */
+.education-container {
+    margin: 2rem auto;
+    max-width: 800px;
+    text-align: left; /* Align all content to the left */
+}
+
+.education-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: black; /* Heading font color set to black */
+}
+
+.education-list {
+    list-style: none;
+    padding: 0;
+}
+
+.education-list li {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    text-align: left; /* Align items to the left */
+    color: black; /* Text font color set to black */
+}
+
+.education-list h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
     margin-bottom: 0.5rem;
-    font-size: 1.3rem;
-    color: #007bff;
+    color: black; /* Subheading font color set to black */
 }
 
-.education-item p {
-    margin: 0.2rem 0;
-    color: #555;
+.education-list p {
+    margin: 0.3rem 0;
+    color: black; /* Paragraph text font color set to black */
 }
 
-/* Reset heading margins globally to prevent default gaps */
-h1, h2, h3, h4, h5, h6 {
+/* Utility styles for consistent margins */
+h1, h3, h4 {
     margin: 0;
 }
