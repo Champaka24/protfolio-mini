@@ -195,14 +195,14 @@
   .icon {
     cursor: pointer;
     height: 2rem;
-    gap: 5rem;
+    gap: 2rem;
   }
   
  /* BUTTONS */
 .btn-container {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
   }
   
   .btn {
@@ -264,7 +264,7 @@
     text-align: center;
     margin: 0 auto;
     line-height: 1.8;
-    color: white; /* Lighter font color */
+    color: #D1D1D1; /* Lighter font color */
   }
   
   .about-text {
@@ -272,7 +272,7 @@
     margin: 0 auto;
     line-height: 1.8;
     font-size: 1.2rem;
-    color: white; /* Lighter font color */
+    color: #D1D1D1; /* Lighter font color */
     margin-bottom: 2rem;
   }
   
