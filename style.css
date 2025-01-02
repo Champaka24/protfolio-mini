@@ -211,7 +211,7 @@
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
-    background: skyblue; /* Dark button background */
+    background: cornflowerblue; /* Dark button background */
     color: #F4F4F4; /* Lighter font color */
     border: rgb(53, 53, 53) 0.1rem solid;
   }
@@ -312,7 +312,7 @@
   .skill-box {
     width: 150px;
     padding: 1rem;
-    background: #4CAF50;
+    background: cornflowerblue;
     border-radius: 10px;
     border: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -358,15 +358,14 @@
   }
   
   .education-list li {
-    background-color: #444444; /* Darker background */
     margin-bottom: 1.5rem;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: #F4F4F4; /* Lighter text color */
   }
   
   .education-list h4 {
+    text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
     color: #F4F4F4;
@@ -374,6 +373,7 @@
   }
   
   .education-list p {
+    text-align: center;
     font-size: 1rem;
     margin: 0.5rem 0;
     color: #D1D1D1; /* Lighter text color */
@@ -385,7 +385,6 @@
   }
   
   .color-container {
-    border-color: rgb(163, 163, 163);
     background: rgb(40, 40, 40); /* Dark background for project */
   }
   
@@ -403,7 +402,8 @@
   
   .project-btn {
     color: #F4F4F4;
-    border-color: rgb(163, 163, 163);
+    border-color: white;
+    background-color: cornflowerblue;
   }
   
   /* CONTACT */
