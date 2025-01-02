@@ -8,16 +8,35 @@
 </head>
 <body>
    <!-- Desktop Navigation -->
-   <nav id="desktop-nav">
-        <div class="logo">Champaka K R</div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#project">Project</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-   </nav>
+<nav id="desktop-nav">
+  <div class="logo">Champaka K R</div>
+  <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
+<!-- Mobile Hamburger Menu -->
+<nav id="hamburger-nav">
+  <div class="logo"> Champaka K R</div>
+  <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+  </div>
+  <div class="menu-links">
+      <ul>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+  </div>
+</nav>
    <!-- Profile Section -->
    <section id="profile">
         <div class="section__pic-container">
@@ -202,7 +221,7 @@
       </nav>
 
     </footer>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
 </body>
