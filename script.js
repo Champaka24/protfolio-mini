@@ -40,10 +40,23 @@ function updateVisitCounter() {
     document.getElementById('count').textContent = visitorData.visitCount;
 }
 
+// Function to update and display the visit counter
+function updateVisitCounter() {
+    // Get the current count from localStorage, or initialize it to 0 if not found
+    let visitCount = localStorage.getItem('visitCount');
+    
+    // If visitCount is null or not a number, initialize to 0
+    visitCount = visitCount ? parseInt(visitCount, 10) : 0;
+
+    // Increment the visit count
+    visitCount++;
+
+    // Update the count in localStorage (so it persists across sessions)
+    localStorage.setItem('visitCount', visitCount);
+
+    // Display the count in the element with id="count"
+    document.getElementById('count').textContent = `Number of visits: ${visitCount}`;
+}
+
 // Call the function on page load
 window.onload = updateVisitCounter;
-
-
-// Call the function on page load
-window.onload = updateVisitCounter;
-
