@@ -386,7 +386,7 @@
   }
   
   /* PROJECTS SECTION */
-  #projects {
+  #project {
     position: relative;
   }
   
@@ -450,6 +450,22 @@
   .email-icon {
     height: 2.5rem;
   }
+
+  #counter {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #1F1F1F; /* Match the section background */
+    color: #F4F4F4; /* Match the text color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#visit-count {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
   
   /* FOOTER SECTION */
   footer {
