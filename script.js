@@ -12,7 +12,7 @@ function updateVisitCounter() {
 
     // If data doesn't exist, it's the first visit
     if (!visitorData) {
-        // Initialize visitor data for first time visitors
+        // Initialize visitor data for first-time visitors
         visitorData = {
             visitCount: 1,
             firstVisitDate: new Date().toLocaleString(),
@@ -35,7 +35,14 @@ function updateVisitCounter() {
         // Display information about the previous visit
         document.getElementById('visitorInfo').textContent = `You have visited ${visitorData.visitCount} times. Last visit was on ${visitorData.lastVisitDate}.`;
     }
+
+    // Also update the visit count in the "count" span element
+    document.getElementById('count').textContent = visitorData.visitCount;
 }
+
+// Call the function on page load
+window.onload = updateVisitCounter;
+
 
 // Call the function on page load
 window.onload = updateVisitCounter;
